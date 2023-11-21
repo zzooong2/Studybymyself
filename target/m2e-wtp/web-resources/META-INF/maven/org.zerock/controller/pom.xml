@@ -173,6 +173,16 @@
 </dependency>
 
 
+<!-- VO, DTO 타입 등 복합적인 데이터가 들어간 객체타입으로 지정할 때 json사용 -->
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.9.4</version>
+</dependency>
+
+
+
 
 
 	</dependencies>

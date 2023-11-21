@@ -36,5 +36,7 @@
 	<!-- Mybatis가 동작할 때 Mapper를 인식할 수 있도록 설정해주기 -->
 	<!-- base-package 속성은 지정된 패키지의 모든 Mybatis 관련 어노테이션을 찾아처리함 -->
 	<mybatis-spring:scan base-package="org.zerock.mapper" />
+	
+	<context:component-scan base-package="org.zerock.service" />
 		
 </beans>
