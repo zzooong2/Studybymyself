@@ -7,7 +7,7 @@ import org.zerock.domain.TestVO;
 
 public interface TestMapper {
 	
-	// @Select("select * from system.TEST")
+	// @Select ("select * from system.TEST")
 	public List<TestVO> getList();
 
 }
