@@ -15,11 +15,13 @@
       </tr>
    </thead>
 
-   <c:forEach items="${list}" var="board">
+  <c:forEach items="${list}" var="board">
       <tr>
           <td><c:out value="${board.name}" /></td>
           <td><c:out value="${board.age}" /></td>
       </tr>
+      
+      
    </c:forEach>
 
  
