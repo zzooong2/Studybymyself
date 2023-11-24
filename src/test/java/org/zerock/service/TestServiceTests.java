@@ -24,6 +24,12 @@ public class TestServiceTests {
 	@Autowired
 	private TestService testService;
 	
+	
+	@Test
+	public void testGetList() {
+		testService.getList().forEach(board -> log.info(board));
+	}
+	
 	@Test
 	public void testExist() {
 		
