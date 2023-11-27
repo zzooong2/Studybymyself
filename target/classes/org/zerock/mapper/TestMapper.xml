@@ -9,8 +9,23 @@
  
  <select id="getList" resultType="org.zerock.domain.TestVO">
  <![CDATA[
- SELECT * FROM system.TEST
+ SELECT * FROM system.member
  ]]>
  </select>
+ 
+ <select id="read" resultType="org.zerock.domain.TestVO">
+ select * from system.member where bno = #{bno}
+ </select>
+ 
+ <select id="delete" resultType="org.zerock.domain.TestVO">
+ delete from system.member where bno = #{bno}
+ </select>
+ 
+ <update id="update">
+ update system.member
+ where bno = #{bno},
+ name = #{name},
+ age = #{age}
+ </update>
  
  </mapper>

@@ -25,6 +25,25 @@ public class TestServiceImpl implements TestService {
 	public List<TestVO> getList() {
 		log.info("getlist...................");
 		return mapper.getList();
-	};
+	}
+	
+	@Override
+	public TestVO get(int bno) {
+		log.info("get........" + bno);
+		return mapper.read(bno);
+	}
+	
+	@Override
+	public int modify(TestVO test) {
+		log.info("modify........" + test);
+		return mapper.update(test);
+	}
+	
+	@Override
+	public int remove(int bno) {
+		log.info("remove........" + bno);
+		return mapper.delete(bno);
+	}
+	
 
 }
