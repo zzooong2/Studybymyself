@@ -42,21 +42,11 @@ public class PracticeController {
 	}
 	
 	@RequestMapping(value = "/remove")
-	public int delete(int bno) {
-		log.info("delete.....!!!" + bno);
+	public Integer delete(int bno) {
 		return service.remove(bno);
 	}
 	
-	@RequestMapping(value = "/modify")
-	public int modify(TestVO test) {
-		log.info("modify......." + test);
-		return service.modify(test);
-	}
 	
-	@RequestMapping(value = "/remove2")
-	public int get(@RequestParam("bno")int bno, Model model) {
-		model.addAttribute(model);
-		return service.remove(bno);
-	}
+	
 	
 }

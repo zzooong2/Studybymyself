@@ -34,9 +34,9 @@ public class TestServiceImpl implements TestService {
 	}
 	
 	@Override
-	public int modify(TestVO test) {
-		log.info("modify........" + test);
-		return mapper.update(test);
+	public int modify(int bno) {
+		log.info("modify........" + bno);
+		return mapper.update(bno);
 	}
 	
 	@Override

@@ -13,19 +13,22 @@
  ]]>
  </select>
  
+ <!-- update 성공 : 1, 실패 : 0 -->
+ <!-- delete 성공 : 삭제된 row의 수량 실패 : 0 -->
+ 
  <select id="read" resultType="org.zerock.domain.TestVO">
  select * from system.member where bno = #{bno}
  </select>
  
- <select id="delete" resultType="org.zerock.domain.TestVO">
+ <select id="delete" resultType="Integer">
  delete from system.member where bno = #{bno}
  </select>
  
  <update id="update">
- update system.member
- where bno = #{bno},
+ update system.member set
  name = #{name},
- age = #{age}
+ age = #{age},
+ where bno = #{bno}
  </update>
  
  </mapper>

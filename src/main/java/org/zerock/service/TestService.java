@@ -10,7 +10,7 @@ public interface TestService {
 	
 	public int remove(int bno);
 	
-	public int modify(TestVO test);
+	public int modify(int bno);
 	
 	public TestVO get(int bno);
 

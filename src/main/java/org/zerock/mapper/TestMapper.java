@@ -13,6 +13,6 @@ public interface TestMapper {
 	
 	public int delete(int bno);
 	
-	public int update(TestVO test);
+	public int update(int bno);
 
 }
