@@ -20,14 +20,13 @@
  select * from system.member where bno = #{bno}
  </select>
  
- <select id="delete" resultType="Integer">
+ <delete id="delete">
  delete from system.member where bno = #{bno}
- </select>
- 
+ </delete>
+
  <update id="update">
- update system.member set
- name = #{name},
- age = #{age},
+ update system.member
+ set name = '김삥중'
  where bno = #{bno}
  </update>
  

@@ -24,7 +24,7 @@ public class PracticeController {
 	
 	@GetMapping("hellow")
 	public String hellow() {
-		String hw = "hewllow world!";
+		String hw = "Hello World!";
 		
 		return hw;
 	}
@@ -46,7 +46,8 @@ public class PracticeController {
 		return service.remove(bno);
 	}
 	
-	
-	
-	
+	@RequestMapping(value = "/update")
+	public Integer modify(int bno) {
+		return service.modify(bno);
+	}
 }
