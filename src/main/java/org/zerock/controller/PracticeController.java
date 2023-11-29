@@ -48,6 +48,7 @@ public class PracticeController {
 	
 	@RequestMapping(value = "/update")
 	public Integer modify(int bno) {
+		
 		return service.modify(bno);
 	}
 }
