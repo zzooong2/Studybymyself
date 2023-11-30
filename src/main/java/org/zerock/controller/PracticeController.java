@@ -32,6 +32,7 @@ public class PracticeController {
 	@RequestMapping(value = "/list")
 	public List<TestVO> getData() {
 		log.info("list.............");
+		
 		return service.getList();
 	}
 	
